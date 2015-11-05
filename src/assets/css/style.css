@@ -1,0 +1,815 @@
+body {
+	margin: 0;
+	padding: 0;
+	display: block;
+	width: 100%;
+	height: 100%;
+	/* background-color: #000; */
+	background-image: url("../images/bg.jpg");
+	background-repeat: no-repeat;
+	font-family: Arial, sans-serif;
+	font-size: 11px;
+}
+.wrapperDalda
+{
+	width: 470px;
+	height: 435px;
+}
+#homeContainer{
+	width:100%;
+	height:100%;
+	display:block;
+	padding:0 0 0 0;
+	z-index: 999;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.home{
+	width:470px;
+	height:435px;
+	margin:0;
+	background-image: url("../images/landing.jpg");
+	display:table;
+	float:left;
+	position: relative;
+
+}
+.homeEnter {
+	display: table;
+	width: 84px;
+	height: 37px;
+	position: relative;
+	float: right;
+	top: 237px;
+	right: 86px;
+	z-index: 1;
+	cursor: pointer;
+}
+.addTrickHome {
+	display: table;
+	width: 84px;
+	height: 37px;
+	position: relative;
+	float: right;
+	top: 275px;
+	right: -44px;
+	z-index: 1;
+	cursor: pointer;
+}
+
+.footerDiv {
+	position: absolute;
+	top: 420px;
+	left: 6px;
+	float: left;
+	z-index: 1001;
+}
+.footerDiv a {
+	cursor: pointer;
+	color: #2f2f2f;
+	text-decoration: none;
+}
+
+
+
+.galleryTemplate, .searchScreen
+{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 70px;
+}
+.mostVotedScreen
+{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 70px;
+}
+.galleryInner{
+	height: 365px;
+	width: 470px;
+	display:table;
+	float:left;
+}
+.header
+{
+	height: 70px;
+	width: 470px;
+	position: absolute;
+	z-index: 100;
+}
+
+.logo
+{
+	float:left;
+}
+.logo>a>img
+{
+	position:relative;
+	top:10px;
+	left:30px;
+}
+.right
+{
+	position: relative;
+	float:right;
+	height:70px;
+}
+.nav
+{
+	background-image: url("../images/btn-home-gallery.png");
+	background-repeat: no-repeat;
+	height: 27px;
+	width: 170px;
+	margin-top:5px;
+	float: right;
+}
+.gallery-container .addtrick>a>img
+{
+	position:relative;
+	left: 15px;
+	top: 6px;
+}
+.homeicon{
+	float: left;
+	width: 35px;
+}
+.homeicon>a>img
+{
+	height:26;
+	width:32;
+	float:left;
+}
+.gallerybtn {
+	float: left;
+	width: 49px;
+}
+.gallerybtn>a>img
+{
+	height:49;
+	width:32;
+	float:left;
+}
+.mostVotedBtn {
+	float: left;
+	width: 86px;
+}
+.mostVotedBtn>a>img
+{
+	height:26;
+	width:86;
+	float:left;
+}
+
+
+.content
+{
+	height: 364px;
+	width: 470px;
+}
+
+.gallery
+{
+	height: 290px;
+	width: 456px;
+	margin: auto;
+	overflow: scroll;
+	overflow-x: hidden;
+	padding-bottom: 5px;
+
+}
+.galleryMostVoted{
+	height: 290px;
+	width: 456px;
+	margin: auto;
+	overflow: scroll;
+	overflow-x: hidden;
+	padding-bottom: 5px;
+}
+.pagenum
+{
+	height: 30px;
+	margin: 0 auto;
+	display: block;
+	position: relative;
+}
+.trickdiv {
+	background: white;
+	height: 140px;
+	width: 214px;
+	margin-top: 5px;
+	float: left;
+	box-shadow: 0 0 5px #888888;
+}
+
+.trick-div-right
+{
+	margin-left: 5px;
+}
+.trickimg {
+	float: left;
+	height: 83px;
+	width: 139px;
+	margin: 5px 0 5px 5px;
+	padding: 5px;
+	background: #fff;
+	box-shadow: 0px 3px 5px #888888;
+}
+
+.trickimg a>img{
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+	display: block;
+}
+.trickvote {
+	float: right;
+	margin: 10px 6px 0;
+	cursor: pointer;
+}
+
+.trickname
+{
+	clear: both;
+	margin-left: 10px;
+}
+.trickname>h1
+{
+	font-family: Arial;
+	font-size: 12px;
+	font-weight: lighter;
+	margin: 0;
+}
+.tricktitle
+{
+	clear: both;
+	margin-left: 10px;
+}
+.tricktitle>h1
+{
+	font-family: Arial;
+	font-size: 12px;
+	font-weight: lighter;
+	margin: 0;
+	color: red;
+}
+
+.galleryScreen{
+	width: 470px;
+	height: 365px;
+	float: left;
+	margin: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.galleryScreen .right {
+	position: relative;
+	float: right;
+	height: 35px;
+}
+.galleryScreenInner{
+	display: block;
+}
+.galleryScreen .header {
+	width: 470px;
+	clear: both;
+	display: block;
+	height: 90px;
+}
+.galleryScreen .header .logo {
+	float: none;
+	clear: both;
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+}
+.screenOverFlowHidden {
+	overflow: auto;
+	overflow-x: hidden;
+	/* margin: 10px 0 0 0; */
+	clear: both;
+	display: block;
+	height: 97px;
+	width: 430px;
+}
+
+
+.screenImageBox {
+	display: block;
+	width: 248px;
+	height: 152px;
+	margin: 12px 0 14px 14px;
+	box-shadow: 0px 3px 5px #888888;
+}
+
+.screenImage {
+	width: 236px;
+	height: 141px;
+	display: table;
+	margin: 0 auto;
+	padding: 5px;
+	text-align: center;
+}
+.screenImage a>img{
+	width: 100%;
+	height: 140px;
+	object-fit: contain;
+	display: block;
+}
+.screenBgDiv {
+	background-color: #fff;
+	margin: 100px 15px 10px 15px;
+	width: 439px;
+	height: 324px;
+	box-shadow: 0px 3px 5px #888888;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.popupImage {
+	width: 29px;
+	height: 29px;
+	position: absolute;
+	left: 228px;
+	top: 130px;
+	display: block;
+}
+.screenTopContainer {
+	width: 439px;
+	margin: 0;
+	height: 178px;
+}
+
+.screenTopLeftBox {
+	float: left;
+	margin: 0;
+}
+.screenTopRightBox {
+	float: right;
+	margin: 0;
+	width: 175px;
+}
+.screenTopRightBox h1 {
+	font-size: 12px;
+}
+.screenTopBox {
+	clear: both;
+	margin: 10px 0 0 22px;
+}
+.screenBottomBox {
+	clear: both;
+	margin: 10px 0 0 10px;
+}
+.screenBottomBox h1
+{
+	font-size: 17px;
+	color: #eb121b;
+	font-weight: normal;
+	margin: 0;
+	width: 155px;
+	overflow: hidden;
+}
+
+.fontColorBlack
+{
+	color: #000000 !important;
+}
+.screenBottomContainer p {
+	margin: 5px 10px 0 15px;
+	font-size: 12px;
+}
+.votesTrick {
+	width: 50px;
+	height: 30px;
+	position: relative;
+	left: -5px;
+	bottom: 25px;
+	background-color: #ee131b;
+	color: #fff;
+	font-size: 16px;
+	text-align: center;
+	font-weight: bold;
+	line-height: 31px;
+}
+.gallery-popup-container {
+	background:rgba(0, 0, 0, 0.5);
+	height: 435px;
+	width: 470px;
+	text-align:right;
+}
+.gallery-popup
+{
+	position: absolute;
+	text-align: center;
+	font-size: 13px;
+	left: 0;
+	right: 0;
+	top: 15%;
+}
+
+.gallery-popup img
+{
+	max-height: 356px;
+	max-width: 425px;
+	border-style: solid;
+	border-color: #fff;
+}
+
+
+
+#containerDalda{
+	width:470px;
+	height:100%;
+	display:block;
+	padding:0 0 0 0;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.daldaSubmitForm{
+	display: table;
+	width: 470px;
+	height: 435px;
+	background-image: url("../images/submit.jpg");
+	position: relative;
+}
+
+#myForm {
+	margin: 0 auto;
+	display: table;
+	position: absolute;
+	left: 120px;
+	top: 124px;
+}
+
+
+
+.daldaSubmitForm label {
+	display: block;
+	margin: 0px;
+}
+.daldaSubmitForm label>span {
+	float: left;
+	width: 20%;
+	text-align: right;
+	padding-right: 10px;
+	margin-top: 10px;
+	color: #888;
+}
+.daldaSubmitForm input[type="text"], .daldaSubmitForm input[type="email"], .daldaSubmitForm textarea, .daldaSubmitForm select {
+	border: 1px solid #DADADA;
+	color: #888;
+	height: 30px;
+	margin-bottom: 5px;
+	margin-right: 6px;
+	margin-top: 2px;
+	outline: 0 none;
+	padding: 3px 3px 3px 5px;
+	width: 222px;
+	font-size: 12px;
+	line-height:15px;
+	box-shadow: inset 0px 1px 4px #ECECEC;
+	-moz-box-shadow: inset 0px 1px 4px #ECECEC;
+	-webkit-box-shadow: inset 0px 1px 4px #ECECEC;
+}
+.daldaSubmitForm textarea{
+	padding: 5px 3px 3px 5px;
+	height: 112px;
+}
+.daldaSubmitForm select {
+	background: #FFF url('down-arrow.png') no-repeat right;
+	background: #FFF url('down-arrow.png') no-repeat right);
+	appearance:none;
+	-webkit-appearance:none;
+	-moz-appearance: none;
+	text-indent: 0.01px;
+	text-overflow: '';
+	width: 70%;
+	height: 35px;
+	line-height: 25px;
+}
+.daldaSubmitForm textarea{
+	height:100px;
+}
+.daldaSubmitForm input[type="submit"] {
+	border: none;
+	border-radius: 3px;
+	text-shadow: 1px 1px 1px #9E3F3F;
+	cursor: pointer;
+	background-image: url("../images/btn-submit.png");
+	text-indent: -999px;
+	display: table;
+	width: 78px;
+	height: 31px;
+}
+/*.daldaSubmitForm input[type="submit"]:hover {
+	background: #CF7A7A
+}*/
+
+
+#registrationContainer{
+	display: none;
+	width:470px;
+	height:435px;
+	display:block;
+	padding:0 0 0 0;
+	top: 0;
+	left: 0;
+	position: absolute;
+}
+.registerSubmitForm{
+	display: table;
+	width: 470px;
+	height: 435px;
+	float: left;
+	position: relative;
+	background-image: url("../images/register.jpg");
+}
+
+
+
+
+.registerSubmitForm label {
+	display: block;
+	margin: 0px;
+	clear: both;
+}
+.registerSubmitForm label>span {
+	float: left;
+	width: 20%;
+	text-align: left;
+	padding-right: 10px;
+	margin-top: 10px;
+	color: #888;
+}
+.registerSubmitForm input[type="text"], .registerSubmitForm input[type="email"], .registerSubmitForm textarea, .registerSubmitForm select {
+	border: 1px solid #DADADA;
+	color: #888;
+	height: 18px;
+	margin-bottom: 5px;
+	margin-right: 6px;
+	margin-top: 2px;
+	outline: 0 none;
+	padding: 3px 3px 3px 5px;
+	width: 222px;
+	font-size: 12px;
+	line-height:15px;
+	box-shadow: inset 0px 1px 4px #ECECEC;
+	-moz-box-shadow: inset 0px 1px 4px #ECECEC;
+	-webkit-box-shadow: inset 0px 1px 4px #ECECEC;
+}
+
+.registerSubmitForm textarea{
+	padding: 5px 3px 3px 5px;
+	height: 112px;
+}
+.registerSubmitForm select {
+	/*
+	background: #FFF url('down-arrow.png') no-repeat right;
+	background: #FFF url('down-arrow.png') no-repeat right);
+	appearance:none;
+	-webkit-appearance:none;
+	-moz-appearance: none;
+	*/
+	text-indent: 0.01px;
+	text-overflow: '';
+	width: 232px;
+	height: 28px;
+	line-height: 21px;
+	padding: 3px 3px 3px 5px;
+
+
+}
+.registerSubmitForm textarea{
+	height:45px;
+	font-family: arial, sans-serif;
+}
+.registerSubmitForm input[type="submit"] {
+	border: none;
+	border-radius: 3px;
+	text-shadow: 1px 1px 1px #9E3F3F;
+	cursor: pointer;
+	background-image: url("../images/btn-submit.png");
+	text-indent: -999px;
+	display: table;
+	width: 78px;
+	height: 31px;
+}
+
+.registerSubmitForm .checkBoxField input#checkbox {
+	float: left;
+}
+.registerSubmitForm .checkBoxField p {
+	float: left;
+	line-height: 1px;
+}
+form#registerForm {
+	margin: 0 auto;
+	display: table;
+	margin-top: 121px;
+}
+
+.title
+{
+	height:30px;
+	float: left;
+	/*width: 100%;*/
+	/*text-align: center;*/
+}
+.title>h1
+{
+	font-family: Arial;
+	font-size: 18px;
+	font-weight: lighter;
+	margin: auto auto auto 10px;
+}
+
+
+.searchGallery {
+	float: right;
+	margin-right: 7px;
+}
+
+
+
+.thankyou-content
+{
+	height: 364px;
+	width: 470px;
+	margin-top: 70px;
+}
+
+
+
+#newDiv{
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 88;
+	background: url("../images/thanks-bg.jpg") no-repeat;
+
+}
+.thanksnote
+{
+	height:220px;
+	width:450px;
+	margin:auto;
+	text-align:center;
+}
+.thanksnote>p
+{
+	font-family: Arial;
+	font-size: 14px;
+	font-weight: lighter;
+	margin:auto;
+	position: relative;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+.share
+{
+	height:100px;
+	text-align:center;
+}
+.share>p
+{
+	font-family: Arial;
+	font-size: 16px;
+	font-weight: lighter;
+}
+.shareicons>a
+{
+	margin-left: 10px;
+}
+.bottomnav
+{
+	height:30px;
+	width:450px;
+	margin:auto;
+}
+.bottomnav>a
+{
+	color:black;
+	font-family: Arial;
+	font-size: 12px;
+	font-weight: lighter;
+	text-decoration: none;
+}
+
+
+.errorDiv
+{
+	color: red;
+	position: absolute;
+	top: 353px;
+	width: 100%;
+	text-align: center;
+	font-size: 16px;
+}
+
+.preloader
+{
+	background: rgba(0, 0, 0, 0.8);
+	width: 470px;
+	height: 435px;
+	position: absolute;
+	z-index: 99999;
+	top: 0;
+	left: 0;
+}
+.preloader img
+{
+	margin: 185px 0 0 203px;
+}
+
+.registartionError
+{
+	position: absolute;
+	top: 400px;
+	width: 470px;
+}
+
+
+/*  popup  */
+.popup-placeholder {
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1002;
+}
+.instruction-popup-container
+{
+	background:rgba(0, 0, 0, 0.5);
+	height: 435px;
+	width: 470px;
+	text-align:right;
+}
+.popup
+{
+	background-color: #ede4da;
+	height: 357px;
+	margin: auto;
+	position: relative;
+	width: 405px;
+	overflow:auto;
+	overflow-x: hidden;
+	border-style: solid;
+	border-color: #b9b9b9;
+	text-align: left;
+	padding: 0 10px 0 10px;
+	font-size: 13px;
+
+}
+.popup>h1
+{
+	font-family: arial;
+	font-size: 18px;
+	font-weight: lighter;
+	text-align: center;
+}
+.popup>p
+{
+	padding: 10px;
+	text-align: left;
+}
+.popup>h2
+{
+	font-family: arial;
+	font-size: 18px;
+	font-weight: lighter;
+	text-align: left;
+	padding-left:10px;
+}
+.popupclose
+{
+	margin-right: 20px;
+	padding-top: 20px;
+}
+.backBtn {
+	position: absolute;
+	top: -93px;
+	left: -15px;
+	margin: 0;
+	padding: 0;
+	cursor: pointer;
+	width: 33px;
+	height: 27px;
+	z-index: 100;
+}
+.thankxBackBtn {
+	width: 130px;
+	height: 33px;
+	position: absolute;
+	top: 242px;
+	left: 170px;
+	z-index: 1;
+	cursor: pointer;
+}
