@@ -1,10 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title></title>
-</head>
-<body>
-
-</body>
-</html>
+<div id="containerDalda" style="display: none;">
+    <div class="daldaSubmitForm">
+        <form id="myForm" name="myForm" action="php/imageUploadService.php" method="post" onsubmit="return submitForm()" enctype="multipart/form-data">
+            <label><input id="fileToUpload" type="file" accept=".jpg,.jpeg,.png" name="Filedata" size="60" placeholder="Add to photo" /></label>
+            <label><input id="title" type="text" name="title" placeholder="Add title" /></label>
+            <label><textarea id="trick" name="trick" col="" rows="" placeholder="Add a convenience tip"></textarea></label>
+            <label><input id="formSubmit" type="submit" name="submit" value="Upload"  /></label>
+        </form>
+    </div>
+    <div id="trick-errorDiv" class="errorDiv"></div>
+</div>

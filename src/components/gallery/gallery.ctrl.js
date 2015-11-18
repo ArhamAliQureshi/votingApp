@@ -4,6 +4,6 @@
 (function(){
     var app = angular.module('galleryCtrModule',[]);
     app.controller('GalleryCtrl',['$scope',function($scope){
-        $scope.$emit(HEADER_STATE,{status: true});
+        $scope.$emit(HEADER_STATE, true);
     }]);
 })();

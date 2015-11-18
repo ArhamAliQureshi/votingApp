@@ -4,22 +4,26 @@
 (function(){
     var app = angular.module('MainModule',['routesModule']);
     app.controller('MainCtrl',['$scope','$location',function($scope,$location){
-        $scope.showHeader = false;
-        $scope.$on(HEADER_STATE,function(prm){
-            console.log(prm);
-            $scope.showHeader = prm;
+        this.showHeader = false;
+        var _this = this;
+        $scope.$on(HEADER_STATE,function(event,prm){
+            _this.showHeader = prm;
         });
 
-        $scope.loadHome = function(){
-            $location.path("/")
+        this.loadHome = function(){
+            $location.path("/");
         };
 
-        $scope.loadGallery = function(){
-            $location.path("/voted/most")
+        this.loadGallery = function(){
+            $location.path("/gallery");
         };
 
-        $scope.loadMostVoted = function(){
-            $location.path("/voted/most")
+        this.loadMostVoted = function(){
+            $location.path("/voted/most");
+        };
+
+        this.loadAddTrick = function(){
+            $location.path("/trick/add");
         };
     }]);
 })();

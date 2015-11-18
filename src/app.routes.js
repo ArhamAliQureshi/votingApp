@@ -19,7 +19,7 @@
                 controller: "MostVotedCtrl"
             })
             .when("/trick/add",{
-                templateUrl: "",
+                templateUrl: "./components/addTrick/addTrick.tpl.html",
                 controller: "AddTrickCtrl"
             })
             .when("/trick/:trickId",{

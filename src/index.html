@@ -34,27 +34,25 @@
 </head>
 <body>
 
-<div class="wrapperDalda" ng-controller="MainCtrl">
-    <div class="header" ng-show="showHeader">
+<div class="wrapperDalda" ng-controller="MainCtrl as mainCtrl">
+    <div class="header" ng-show="mainCtrl.showHeader">
         <div class="logo">
             <a href="#"><img src="assets/images/logo.png"></a>
         </div>
         <div class="right">
             <div class="nav">
                 <div class="homeicon">
-                    <a id="btn-home" ng-click="loadHome()"><img style="width: 35px; height: 25px;" src="assets/images/invisible.png"></a>
+                    <a id="btn-home" ng-click="mainCtrl.loadHome()"><img style="width: 35px; height: 25px;" src="assets/images/invisible.png"></a>
                 </div>
                 <div class="gallerybtn">
-                    <a id="btn-gallery" ng-click="loadGallery()"><img style="width: 49px; height: 25px;"
-                                                      src="assets/images/invisible.png"></a>
+                    <a id="btn-gallery" ng-click="mainCtrl.loadGallery()"><img style="width: 49px; height: 25px;" src="assets/images/invisible.png"></a>
                 </div>
                 <div class="mostVotedBtn">
-                    <a id="mostVotedGallery" ng-click="loadMostVoted()"><img style="width: 86px; height: 27px;"
-                                                           src="assets/images/btn-most-voted.png"></a>
+                    <a id="mostVotedGallery" ng-click="mainCtrl.loadMostVoted()"><img style="width: 86px; height: 27px;" src="assets/images/btn-most-voted.png"></a>
                 </div>
             </div>
             <div class="addtrick">
-                <a ng-click="loadHome()"><img id="addTrack" src="assets/images/addtrick.png"></a>
+                    <a ng-click="mainCtrl.loadAddTrick()"><img id="addTrack" src="assets/images/addtrick.png"></a>
             </div>
         </div>
     </div>
