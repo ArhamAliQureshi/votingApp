@@ -1,7 +1,20 @@
-<div id="containerDalda" style="display: none;">
+<div class="addTrickTemplate">
+    <div class="header">
+        <div class="nav">
+            <div class="homeicon">
+                <a id="btn-home" ng-click="mainCtrl.loadHome()"><img style="width: 35px; height: 25px;" src="assets/images/invisible.png">{{}}</a>
+            </div>
+            <div class="gallerybtn">
+                <a id="btn-gallery" ng-click="mainCtrl.loadGallery()"><img style="width: 49px; height: 25px;" src="assets/images/invisible.png"></a>
+            </div>
+            <div class="mostVotedBtn">
+                <a id="mostVotedGallery" ng-click="mainCtrl.loadMostVoted()"><img style="width: 86px; height: 27px;" src="assets/images/btn-most-voted.png"></a>
+            </div>
+        </div>
+    </div>
     <div class="daldaSubmitForm">
         <form id="myForm" name="myForm" action="php/imageUploadService.php" method="post" onsubmit="return submitForm()" enctype="multipart/form-data">
-            <label><input id="fileToUpload" type="file" accept=".jpg,.jpeg,.png" name="Filedata" size="60" placeholder="Add to photo" /></label>
+            <label><input id="fileToUpload" type="file" accept=".jpg,.jpeg,.png" name="Filedata" size="60"/></label>
             <label><input id="title" type="text" name="title" placeholder="Add title" /></label>
             <label><textarea id="trick" name="trick" col="" rows="" placeholder="Add a convenience tip"></textarea></label>
             <label><input id="formSubmit" type="submit" name="submit" value="Upload"  /></label>

@@ -2,7 +2,7 @@
  * Created by Arham Ali Qureshi on 11/1/2015.
  */
 (function(){
-    var app = angular.module('routesModule',['ngRoute','homeCtrModule','galleryCtrModule']);
+    var app = angular.module('routesModule',['ngRoute','homeCtrModule','galleryCtrModule','mostVotedCtrModule','addTrickCtrlModule']);
 
     app.config(function($routeProvider){
         $routeProvider

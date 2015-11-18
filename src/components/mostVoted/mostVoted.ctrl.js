@@ -3,7 +3,7 @@
  */
 (function(){
     var app = angular.module('mostVotedCtrModule',[]);
-    app.controller('MostVotedCtrl','$http',['$scope',function($scope,$http){
-
+    app.controller('MostVotedCtrl',['$scope','$http',function($scope,$http){
+        $scope.$emit(HEADER_STATE, true);
     }]);
 })();

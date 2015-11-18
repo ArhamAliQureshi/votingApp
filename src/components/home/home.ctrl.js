@@ -11,7 +11,7 @@
         };
 
         $scope.loadAddTrick = function(){
-            //$location.path("/trick/add");
+            $location.path("/trick/add");
         };
     }]);
 })();
